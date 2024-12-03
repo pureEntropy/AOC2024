@@ -8,7 +8,7 @@ regex = "mul\((\d{1,3}),(\d{1,3})\)"
 
 def part1(text):
     regex = "mul\((\d{1,3}),(\d{1,3})\)"
-    data = re.findall(regex, puzzleInput)
+    data = re.findall(regex, text)
     return sum([int(pair[0]) * int(pair[1]) for pair in data])
 
 
